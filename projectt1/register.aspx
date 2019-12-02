@@ -197,7 +197,7 @@
                 </td>
             </tr>
             <tr>
-                <td></td>
+                <td><asp:Button ID="Button2" runat="server" Text="Login" PostBackUrl="~/login.aspx"  CausesValidation="False"/></td>
                 <td><asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" /></td>
 
             </tr>
