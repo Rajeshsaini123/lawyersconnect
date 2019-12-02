@@ -54,7 +54,8 @@ namespace projectt1
                 cmd.ExecuteNonQuery();
 
                 Label9.Text = "Registeration Successful";
-
+                Session["reg"] = "1";
+                Response.Redirect("~/login.aspx");
 
                 conn.Close();
 

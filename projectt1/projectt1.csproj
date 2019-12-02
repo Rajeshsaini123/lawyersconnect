@@ -86,9 +86,9 @@
   <ItemGroup>
     <Content Include="702860.jpg" />
     <Content Include="7028611111111.jpg" />
+    <Content Include="myMessages.aspx" />
     <Content Include="background.jpg" />
     <Content Include="bg01.jpg" />
-    <Content Include="gavel.jpg" />
     <Content Include="hammer-719068_960_720 this%27.jpg" />
     <Content Include="hulk.jpg" />
     <Content Include="pro2.PNG" />
@@ -102,6 +102,13 @@
     <Content Include="moreInfo.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="myMessages.aspx.cs">
+      <DependentUpon>myMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myMessages.aspx.designer.cs">
+      <DependentUpon>myMessages.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>

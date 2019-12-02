@@ -14,7 +14,20 @@ namespace projectt1
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            int a = Convert.ToInt32(Session["id"]);
+            if (a == 0)
+            {
+                Session["login"] = "0";
+                Response.Redirect("~/login.aspx");
+            }
+            
+            GridView1.HeaderRow.TableSection = TableRowSection.TableHeader;
+        }
 
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Session["id"] = 0;
+            Response.Redirect("~/login.aspx");
         }
     }
 }

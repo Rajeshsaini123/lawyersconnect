@@ -52,7 +52,6 @@ namespace projectt1
 
         }
 
-
         protected void Button3_Click(object sender, EventArgs e)
         {
 
@@ -85,6 +84,12 @@ namespace projectt1
                 Response.Write("error" + ex.ToString());
             }
 
+        }
+
+        protected void Button2_Click1(object sender, EventArgs e)
+        {
+            Session["id"] = 0;
+            Response.Redirect("~/login.aspx");
         }
     }
 }
